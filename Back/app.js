@@ -6,8 +6,12 @@ const tasksRouter = require('./src/routes/tasksRoute');
 const UserRouter = require('./src/routes/userRoutes');
 const UploadRouter = require('./src/routes/uploadRoutes');
 
+const allowedOrigins = [
+  'https://todo-list-teal-chi-97.vercel.app'
+];
+
 app.use(cors({
-    origin: '*',
+    origin: allowedOrigins,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
