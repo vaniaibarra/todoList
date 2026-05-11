@@ -1,10 +1,10 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Register from '../views/Register';
-import Login from '../views/Login';
+import Register from '../views/Auth/Register';
+import Login from '../views/Auth/Login';
 import ProtectedRoute from './ProtectedRoute';
-import Profile from '../views/Profile';
-import Tasks from '../views/Tasks';
-import EditProfile from '../views/EditProfile';
+import Profile from '../views/Profile/Profile';
+import Tasks from '../views/Tasks/Tasks';
+import EditProfile from '../views/EditProfile/EditProfile';
 
 const AppRoutes = () => {
     return (
