@@ -7,7 +7,8 @@ const UserRouter = require('./src/routes/userRoutes');
 const UploadRouter = require('./src/routes/uploadRoutes');
 
 const allowedOrigins = [
-  'https://todo-list-teal-chi-97.vercel.app'
+  'https://todo-list-teal-chi-97.vercel.app',
+  'http://localhost:5173'
 ];
 
 app.use(cors({
