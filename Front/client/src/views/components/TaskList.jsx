@@ -56,7 +56,7 @@ const TaskList = () => {
             </div>
             
             <div className="flex-1">
-                <ul className="overflow-y-auto max-h-[60vh] sm:max-h-[500px] pr-2 custom-scrollbar">
+                <ul className="overflow-y-auto max-h-[60vh] sm:max-h-125 pr-2 custom-scrollbar">
                     {
                     tasks.length === 0 ? 
                     <p className="font-outfit font-bold text-center text-xl sm:text-2xl text-[#395a78] mt-10">
@@ -76,7 +76,7 @@ const TaskList = () => {
                                     className="w-6 h-6 mt-1 sm:mt-0 accent-[#d57e98] cursor-pointer shrink-0"
                                 />
                                 <div className="flex flex-col w-full">
-                                    <span className={`text-xl sm:text-2xl break-words ${t.completed ? 'line-through text-gray-400' : 'text-gray-800'}`}>
+                                    <span className={`text-xl sm:text-2xl wrap-break-word ${t.completed ? 'line-through text-gray-400' : 'text-gray-800'}`}>
                                         {t.task_name}
                                     </span>
                                     
